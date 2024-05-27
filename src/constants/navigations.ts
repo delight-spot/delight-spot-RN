@@ -1,5 +1,7 @@
 const feedTabNavigation = {
   HOME: 'TabFeedHome',
+  BOOKINGS: 'TabBookings',
+  MY_PAGE: 'TabMyPage',
 } as const;
 
 const feedStackNavigation = {

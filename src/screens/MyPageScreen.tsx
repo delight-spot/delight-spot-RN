@@ -1,9 +1,9 @@
 import {Text, View} from 'react-native';
 
-export default function FeedHomeScreen() {
+export default function MyPageScreen() {
   return (
     <View>
-      <Text>FeedHome</Text>
+      <Text>My page</Text>
     </View>
   );
 }

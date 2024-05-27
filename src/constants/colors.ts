@@ -1,4 +1,4 @@
-const color = {
+const colors = {
   // amber - 메인
   AMBER_800: '#9a3412',
   AMBER_700: '#b45309',
@@ -39,4 +39,4 @@ const color = {
   BLACK: '#000000',
 };
 
-export {color};
+export {colors};
