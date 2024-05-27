@@ -1,7 +1,7 @@
-import {createStackNavigator} from '@react-navigation/stack';
-import FeedHomeScreen from '../../screens/FeedHomeScreen';
-import {colors, feedStackNavigation} from '../../constants';
 import {SafeAreaView} from 'react-native';
+import {createStackNavigator} from '@react-navigation/stack';
+import {colors, feedStackNavigation} from '@/constants';
+import FeedHomeScreen from '@/screens/FeedHomeScreen';
 
 export type FeedStackParamList = {
   [feedStackNavigation.HOME]: undefined;
