@@ -10,12 +10,14 @@ type SellingList = {
   description: string;
 };
 
+type KindMenu = 'cafe' | 'food' | 'ect';
+
 interface Store {
   pk: number;
   name: string;
   description: 11;
   reviews_len: string;
-  kind_menu: string;
+  kind_menu: KindMenu;
   kind_detail: string;
   sell_list: SellingList[];
   city: string;
@@ -26,4 +28,4 @@ interface Store {
   photos: Photo[];
 }
 
-export type {Photo, SellingList, Store};
+export type {Photo, SellingList, Store, KindMenu};

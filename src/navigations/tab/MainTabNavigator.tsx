@@ -5,6 +5,7 @@ import {colors, feedTabNavigation} from '@/constants';
 import FeedStackNavigator from '../stack/FeedStackNavigator';
 import FeedBookingStore from '@/screens/FeedBookingScreen';
 import MyPageScreen from '@/screens/MyPageScreen';
+import {Image} from 'react-native';
 
 export type FeedTabParamList = {
   [feedTabNavigation.HOME]: undefined;
@@ -50,12 +51,24 @@ export default function MainTabNavigator() {
         headerTitleStyle: {
           color: colors.AMBER_600,
         },
+        headerStyle: {
+          backgroundColor: colors.WHITE,
+        },
       })}>
       <Tabs.Screen
         name={feedTabNavigation.HOME}
         component={FeedStackNavigator}
         options={{
-          headerTitle: 'Delight Spots',
+          headerTitle: () => (
+            <Image
+              source={require('@/assets/logo.png')}
+              style={{
+                width: 200,
+                height: 50,
+                resizeMode: 'contain',
+              }}
+            />
+          ),
         }}
       />
       <Tabs.Screen
