@@ -1,13 +1,13 @@
+import {queryKeys} from '@/constants';
+import {getStores} from '@/services/feed/stores';
+import {ErrorStatus} from '@/types/common';
+import {Store} from '@/types/domain';
 import {
   InfiniteData,
   QueryKey,
   UseInfiniteQueryOptions,
   useInfiniteQuery,
 } from '@tanstack/react-query';
-import {Store} from '../../types/domain';
-import {ErrorStatus} from '../../types/common';
-import {getStores} from '../../services/feed/stores';
-import {queryKeys} from '../../constants';
 
 function useGetInfiniteStores(
   queryOptions?: UseInfiniteQueryOptions<

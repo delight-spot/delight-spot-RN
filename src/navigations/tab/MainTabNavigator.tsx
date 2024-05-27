@@ -1,10 +1,10 @@
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import FeedStackNavigator from '../stack/FeedStackNavigator';
-import {colors, feedTabNavigation} from '../../constants';
-import FeedBookingStore from '../../screens/FeedBookingScreen';
-import MyPageScreen from '../../screens/MyPageScreen';
 import {RouteProp} from '@react-navigation/native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import {colors, feedTabNavigation} from '@/constants';
+import FeedStackNavigator from '../stack/FeedStackNavigator';
+import FeedBookingStore from '@/screens/FeedBookingScreen';
+import MyPageScreen from '@/screens/MyPageScreen';
 
 export type FeedTabParamList = {
   [feedTabNavigation.HOME]: undefined;
