@@ -64,7 +64,7 @@ export default function MainTabNavigator() {
               source={require('@/assets/logo.png')}
               style={{
                 width: 200,
-                height: 50,
+                height: 25,
                 resizeMode: 'contain',
               }}
             />
